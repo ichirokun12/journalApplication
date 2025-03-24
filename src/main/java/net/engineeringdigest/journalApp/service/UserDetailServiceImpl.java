@@ -13,8 +13,9 @@ import net.engineeringdigest.journalApp.entity.User;
 
 
 import net.engineeringdigest.journalApp.repository.UserRepository;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class UserDetailServiceImpl implements UserDetailsService {
 
     @Autowired

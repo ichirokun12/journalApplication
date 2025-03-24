@@ -17,7 +17,9 @@ import org.springframework.stereotype.Component;
 // import net.engineeringdigest.journalApp.entity.JournalEntry;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.repository.UserRepository;
-@Component
+import org.springframework.stereotype.Service;
+
+@Service
 @Slf4j
 public class UserService {
     @Autowired

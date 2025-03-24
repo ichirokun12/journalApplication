@@ -20,6 +20,5 @@ public class WeatherResponse {
         private List<String> weatherDescription;
         private int temperature;
         private int feelslike;
-
     }
 }
