@@ -4,6 +4,7 @@ package net.engineeringdigest.journalApp.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import org.bson.types.ObjectId;
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
@@ -19,12 +20,15 @@ import lombok.NoArgsConstructor;
 @Document(collection = "users")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     private ObjectId id;   
     @Indexed(unique = true) 
     @NonNull
     private String userName;
+    private String email;
+    private boolean sentimentAnalysis;
     @NonNull
     private String password;
 
