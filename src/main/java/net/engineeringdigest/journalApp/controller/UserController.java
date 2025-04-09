@@ -3,6 +3,7 @@ package net.engineeringdigest.journalApp.controller;
 // import java.util.List;
 
 // import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.engineeringdigest.journalApp.api.response.WeatherResponse;
 import net.engineeringdigest.journalApp.repository.UserRepository;
 import net.engineeringdigest.journalApp.service.WeatherService;
@@ -26,6 +27,7 @@ import net.engineeringdigest.journalApp.service.UserService;
 
 @RestController
 @RequestMapping("/user")
+@Tag(name = "User APIs")
 public class UserController {
 
     @Autowired

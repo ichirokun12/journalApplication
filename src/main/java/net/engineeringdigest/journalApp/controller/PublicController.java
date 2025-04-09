@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import net.engineeringdigest.journalApp.service.UserDetailServiceImpl;
 import net.engineeringdigest.journalApp.utilis.JwtUtil;
@@ -22,6 +23,7 @@ import net.engineeringdigest.journalApp.service.UserService;
 @RestController
 @RequestMapping("/public")
 @Slf4j
+@Tag(name = "Public APIs")
 public class PublicController {
 
     @Autowired
